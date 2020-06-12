@@ -1,0 +1,170 @@
+<!DOCTYPE html>				
+<html lang="pt-br">
+	<head>
+		<!-- Meta tags Obrigatórias -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+		<!-- Bootstrap CSS (visual & responsividade...)-->
+		<link rel="stylesheet" href="Bootstrap/4.1.3/css/bootstrap.css">
+		<!-- Linkando o arquivo de estilização próprio -->
+		<link rel="stylesheet" href="CSS/estilo.css">
+
+		<title> TECHCURSOS -- Estágios </title>
+
+	</head>
+
+	<body>
+		<!-- Cabeçalho -->
+		<header class="container-fluid navbar">
+			<a href="index.html"><img id="logo" src="imgs/logo.png"></a> <!-- imagem logo -->
+			<h1  id="titulo"> TECHCURSOS </h1>
+			<img id="user" src="imgs/user.png" data-toggle="modal" data-target="#MyModal">  <!-- imagem do user -->
+
+			<!-- Inserção da tela de login -->
+			<div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="ModCenter">Faça seu login</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label class="modal-title">Digite seu nome de usuário:</label>
+									<input type="email" class="form-control" placeholder="Username">
+								</div>
+								<div class="form-group">
+									<label class="modal-title">Digite a sua senha abaixo:</label>
+									<input type="password" class="form-control" placeholder="************">
+									<br>
+									<button type="button" class="btn btn-primary">Login</button>
+									<br>
+									<a href="">Esqueci meu nome de usuário</a>
+									<br>
+									<a href="">Esqueci minha senha</a>
+								</div>
+							</form>
+						</div>
+					  <div class="modal-footer">
+					  		<p class="modal-title">Se prefirir acesse com:</p>
+					  		<br>
+					  		<div class="rodapeh_login">
+									<a href="https://www.facebook.com" class="rodapeh_login"> <img src="imgs/twitter.svg" class="imgs_footer_login_one"> </a>
+									<a href="https://www.facebook.com"> <img src="imgs/facebook.svg" class="imgs_footer_login_two"></a> 
+							</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Barra de navegação/Menu Sandwich -->
+		<nav class="navbar navbar-expand-lg">
+			<img></img>
+			<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#my_tech_bar" 
+				aria-controls="my_tech_bar" aria-expanded="false" aria-label="Alterna navegação" id="buttonToggler">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Início dos conteúdos da Barra de Navegação... -->
+			<div class="collapse navbar-collapse" id="my_tech_bar">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html"> Home </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="eventos.html"> Eventos </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="estagios.html"> Estágios </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="unidades.html"> Unidades </a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="contato.html"> Contato </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="biblioteca.html"> Biblioteca Online </a>
+					</li>
+
+				</ul>
+			</div>	
+		</nav>	
+
+		<!-- Área de Compartilhar -->
+		<div id="areaCompartilhar">
+			<a class="img-fluid rounded" href="https://www.facebook.com" target="blank"><img src="imgs/facebook.svg"></a>
+			<a class="img-fluid rounded" href="https://web.whatsapp.com" target="blank"><img src="imgs/whatsapp.svg"></a>
+			<a class="img-fluid rounded" href="https://www.twitter.com" target="blank"><img src="imgs/twitter.svg"></a>
+			<a class="img-fluid rounded" href="https://www.instagram.com" target="blank"><img src="imgs/instagram.svg"></a>
+		</div>
+
+		<!-- Ínicio da área onde está localizado o carrossel e o conteúdo dá página -->
+
+		<div class="container-fluid" id="areaCorpo">
+
+			<!-- Carrossel -->
+
+			<div class="carousel slide" data-ride="carousel" id="meuCarrossel">
+				<ol class="carousel-indicators">
+					<li data-targer="#meuCarrossel" data-slide-to="0" class="active"></li>
+					<li data-target="#meuCarrossel" data-slide-to="1"></li>
+					<li class="#meuCarrossel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="imgs/bannermatricula.JPEG" alt="Primeiro Slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="imgs/bannersaraiva.JPEG" alt="Segundo Slide">
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="imgs/bannerdesigndigital.JPEG" alt="Terceiro Slide">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#meuCarrossel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+			</div>
+			<br>
+
+			<!-- Conteudo da página -->
+			<div id="conteudoPagina">
+				<h1> ESTÁGIOS </h1> <br><!-- colocando o titulo -->
+				<div id="info">
+					<img id="img" src="imgs/estagios1.jpg"> <!-- colocando a imagem  -->
+					<a href="https://olhardigital.com.br/noticia/vagas-de-estagio-para-estudantes-de-tecnologia-da-informacao/89941" target="blank"><!-- colocando o link do tecmundo -->
+						<h4>Vaga de estágios para estudantes de tecnologia da informação </h4> <!-- titulo do texto -->
+					</a>
+
+					<br>
+
+					<img id="img" src="imgs/estagios2.jpg"> <!-- colocando a imagem  -->
+					<a href="https://computerworld.com.br/2018/02/01/white-martins-tem-vagas-de-estagio-em-ti/" target="blank"><!-- colocando o link do tecmundo -->
+						<h4> Vagas de estagio em T.I</h4> <!-- titulo do texto -->
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Rodapé  -->
+
+		<footer id="rodape">
+			<a> COPYRIGHT© 2019 TODOS OS DIREITOS RESERVADOS </a>
+		</footer>
+
+		<!-- JavaScript (Opcional) -->
+		<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>																																																																																																									

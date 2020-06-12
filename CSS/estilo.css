@@ -1,0 +1,272 @@
+@font-face{
+	font-family: techtitulo;
+	src: url("../fonte/Robota-NonCommercial.otf");
+}
+
+@font-face{
+	font-family: titulaCorpo;
+	src: url("../fonte/Hack-Regular.ttf");
+}
+
+/*@font-face{
+	font-family: techtitulo;
+	src: url("../fonte/all_star.ttf");
+}*/
+
+header{
+	background-color: #ff6600;
+	height: 15%;
+	width: 100%;
+	color: white;
+}
+
+#logo{
+	width: 150px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+
+#titulo{
+	font-size: 450%;
+	text-align: center;	
+	font-family: techtitulo;
+}
+
+#user{
+	width: 6%;
+	border: none;
+}
+
+/*Formatações para a tela de login*/
+.modal-title{
+	color: black;
+	text-align: center;
+	align-items: center;
+}
+
+.modal-content{
+	text-align: center;
+	align-items: center;
+}
+
+.modal-footer{
+	align-items: center;
+}
+
+.rodapeh_login{
+	text-align: center;
+	align-items: center;
+}
+
+.imgs_footer_login_one {
+	align-items: left;
+	height: 40px;
+	width: 40px;
+	float: right;
+}
+
+.imgs_footer_login_two {
+	align-items: right;
+	height: 40px;
+	width: 40px;
+	float: left;
+	right: 0;
+}
+
+#img{
+	width: 50%;
+}
+
+nav{
+	max-width: 100%;
+	position: relative;
+	font-size: 20px; 
+	font-family: Verdana;
+}
+
+nav ul{
+	width: 100%;
+	margin-left: 0.3%;
+	display: table;
+	background-color: white; 
+}
+
+nav li{
+	display: table-cell;
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	margin-left: 7%;
+	text-decoration: none;
+}
+
+nav li a{
+	background-color: #ff6600;
+	border-radius: 15px;
+	text-decoration: none;
+}
+a.nav-link{
+	color: 	white;
+}
+
+#areaCompartilhar{
+	width: 130px;
+	max-width: 10%;
+	position: fixed;
+	right: 0;
+	border-top: 3px solid #000;
+	border-left: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+
+#areaCompartilhar img{
+	width: 45%;
+	height: 45%;
+	float: left;
+	margin-top: 20%;
+	margin-left: 28%;
+	padding-bottom: 20%; 
+}
+
+#areaCompartilhar img:hover{
+	transition: 0.1s;
+	transform: scale(1.2);
+}
+
+#meuCarrossel{
+	position: relative;
+	max-width: 90%;
+}
+
+#conteudoPagina{
+	max-width: 90%;
+}
+#conteudoPagina h1{
+	font-family: tituloCorpo;
+	text-align: center;
+}
+
+.container {
+	width: 50%;
+	height: 50%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center
+}
+
+#areaCorpo h1{
+	text-align: center;
+	font-family: Verdana;
+}
+			
+th, td, caption{
+	border: 3px solid black;
+	text-align: center;
+}
+
+.download {
+	height: 30%;
+	width: 30%;
+}
+
+#sLinhaUm #sLinhaDois img{
+	width: 70px;
+	height: 70px;
+}
+
+#sLinhaUm div{
+	width: 10%;
+	float: left;
+	margin: 1% 0 2% 27%;
+}
+
+#sLinhaDois div{
+	width: 10%;
+	text-align: center;
+	float: left;
+	margin: 1% 0 2% 27%;
+}
+
+#sLinhaDois{
+	clear: left;
+}
+
+#rodape{
+	height: 70px;
+	position: relative;
+	clear: both;
+	background-color: #ff6600;
+	color: #fff;
+	font-size: 100%;
+	font-family: Verdana;
+	letter-spacing: 5px;
+	text-align: center;
+	padding-top: 1.5%;
+}
+
+#info{
+	text-align: center;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1020px){
+	#logo{
+		width: 50px;
+		margin-top: 1%;
+		margin-left: 1%;
+	}
+
+	#titulo{
+		font-size: 100%;
+		text-align: center;	
+	}
+
+	#meuCarrossel{
+		position: relative;
+		max-width: 85%;
+	}
+
+	#conteudoPagina h1{
+		font-size: 200%;	
+	}
+
+	#conteudoPagina h4{
+		text-align: center;
+		font-size: 100%;
+	}
+
+	#rodape{
+		padding-top: 5%;
+		font-size: 65%;
+	}
+
+	table{
+		width: 65%;
+	}
+
+	#sLinhaUm img, #sLinhaDois img{
+		width: 70px;
+		height: 70px;
+	}
+
+	#sLinhaUm div{
+	width: 10%;
+	float: left;
+	margin: 3% 0 1% 23%;
+}
+
+	#sLinhaDois div{
+	width: 10%;
+	text-align: center;
+	float: left;
+	margin: 3% 0 2% 23%;
+	} 
+
+	#sLinhaUm div p, #sLinhaDois div p{
+		width: 70px;
+		height: 70px;
+		visibility: hidden;
+	}
+
+}
